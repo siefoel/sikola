@@ -17,7 +17,8 @@
     <!--  Favicon -->
     <link rel="shortcut icon" type="image/png" href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" />
     <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="{{asset('dist')}}/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    
+    @yield('css')
     
     <!-- Core Css -->
     <link  id="themeColors"  rel="stylesheet" href="{{asset('dist')}}/css/style.min.css" />
@@ -503,9 +504,8 @@
     <script src="{{asset('dist')}}/js/sidebarmenu.js"></script>
     <script src="{{asset('dist')}}/js/custom.js"></script>
     <!--  current page js files -->
-    <script src="{{asset('dist')}}/libs/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="{{asset('dist')}}/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="{{asset('dist')}}/js/dashboard.js"></script>
+    @yield('js')
+    
   </body>
 
 <!-- Mirrored from demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/html/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 12:29:46 GMT -->

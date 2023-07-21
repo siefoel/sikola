@@ -14,11 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.home');
 });
 Route::get('/login', function () {
     return view('auth.login');
 });
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
+});
+Route::get('/users', function () {
+    return view('dashboard.users');
+});
+Route::get('/datasekolah', function () {
+    return view('sekolah.sekolah');
+});
+Route::get('/verifysekolah', function () {
+    return view('sekolah.verifysekolah');
 });

@@ -1,5 +1,8 @@
 @extends('templates.tdashboard')
-
+@section('title','Dashboard')
+@section('css')
+<link rel="stylesheet" href="{{asset('dist')}}/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+@endsection
 @section('content')
     <!--  Owl carousel -->
     <div class="owl-carousel counter-carousel owl-theme">
@@ -554,4 +557,9 @@
           </div>
         </div>
       </div>
+@endsection
+@section('js')
+<script src="{{asset('dist')}}/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="{{asset('dist')}}/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="{{asset('dist')}}/js/dashboard.js"></script>
 @endsection

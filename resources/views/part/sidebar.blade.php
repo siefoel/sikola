@@ -29,7 +29,7 @@
             <span class="hide-menu">Administrator</span>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="index.html" aria-expanded="false">
+            <a class="sidebar-link" href="/users" aria-expanded="false">
               <span>
                 <i class="ti ti-users"></i>
               </span>
@@ -45,7 +45,7 @@
             </a>
             <ul aria-expanded="false" class="collapse first-level">
               <li class="sidebar-item">
-                <a href="blog-posts.html" class="sidebar-link">
+                <a href="/datasekolah" class="sidebar-link">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
                   </div>
@@ -53,7 +53,7 @@
                 </a>
               </li>
               <li class="sidebar-item">
-                <a href="blog-detail.html" class="sidebar-link">
+                <a href="/verifysekolah" class="sidebar-link">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
                   </div>
