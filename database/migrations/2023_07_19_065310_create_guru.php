@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('guru', function (Blueprint $table) {
             $table->id();
+            $table->string('nip', 24)->unique();
+            $table->string('nuptk', 24)->unique();
+            $table->foreignId('users_id');
+            $table->foreignId('sekolah_id');
             $table->timestamps();
         });
     }

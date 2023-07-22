@@ -37,6 +37,14 @@
             </a>
           </li>
           <li class="sidebar-item">
+            <a class="sidebar-link" href="/role" aria-expanded="false">
+              <span>
+                <i class="ti ti-users"></i>
+              </span>
+              <span class="hide-menu">Role and Permission</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
             <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
               <span class="d-flex">
                 <i class="ti ti-school"></i>
@@ -82,7 +90,7 @@
               <span class="d-flex">
                 <i class="ti ti-layout-grid"></i>
               </span>
-              <span class="hide-menu">Mater Data</span>
+              <span class="hide-menu">Master Data</span>
             </a>
             <ul aria-expanded="false" class="collapse first-level">
               <li class="sidebar-item">

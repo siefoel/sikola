@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.home');
+Route::controller(AuthController::class)->group(function(){
+    Route::get('auth','index')->name('login');
+    Route::get('pendaftaran','pendaftaran')->name('penndaftaran');
+    Route::post('auth/login','login');
+    Route::post('auth/register','register');
 });
-Route::get('/login', function () {
-    return view('auth.login');
+
+Route::controller(HomeController::class)->group(function(){
+    Route::get('/','index')->name('home');
 });
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
@@ -30,4 +35,7 @@ Route::get('/datasekolah', function () {
 });
 Route::get('/verifysekolah', function () {
     return view('sekolah.verifysekolah');
+});
+Route::get('/role', function () {
+    return view('role.role');
 });
