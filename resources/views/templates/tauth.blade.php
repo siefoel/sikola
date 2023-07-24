@@ -21,14 +21,6 @@
     <link  id="themeColors"  rel="stylesheet" href="{{asset('dist')}}/css/style.min.css" />
   </head>
   <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
-    </div>
-    <!-- Preloader -->
-    <div class="preloader">
-      <img src="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" alt="loader" class="lds-ripple img-fluid" />
-    </div>
     <!--  Body Wrapper -->
     @yield('auth')
     
@@ -43,6 +35,7 @@
     <script src="{{asset('dist')}}/js/sidebarmenu.js"></script>
     @yield('js')
     <script src="{{asset('dist')}}/js/custom.js"></script>
+    
   </body>
 
 <!-- Mirrored from demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/html/main/authentication-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 12:34:59 GMT -->

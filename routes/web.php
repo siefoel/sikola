@@ -14,11 +14,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::controller(AuthController::class)->group(function(){
-    Route::get('auth','index')->name('login');
-    Route::get('pendaftaran','pendaftaran')->name('penndaftaran');
-    Route::post('auth/login','login');
-    Route::post('auth/register','register');
+// Route::controller(AuthController::class)->group(function(){
+//     Route::get('auth','index')->name('login');
+//     Route::get('pendaftaran','pendaftaran')->name('penndaftaran');
+//     Route::post('auth/login','login');
+//     Route::post('auth/register','register');
+// });
+
+Route::prefix('auth')->group(function () {
+    Route::get('/',[AuthController::class,'index'])->name('login');
+    Route::get('pendaftaran',[AuthController::class,'pendaftaran'])->name('penndaftaran');
+    Route::post('login',[AuthController::class,'login']);
+    Route::post('register',[AuthController::class,'register']);
 });
 
 Route::controller(HomeController::class)->group(function(){

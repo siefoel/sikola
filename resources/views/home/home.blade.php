@@ -13,7 +13,7 @@
               dashboards, applications and pages.</p>
             <div class="d-sm-flex align-items-center gap-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
               <a class="btn btn-primary px-5 btn-hover-shadow d-block mb-3 mb-sm-0"
-                href="pendaftaran">Daftar Sekarang</a>
+                href="auth/pendaftaran">Daftar Sekarang</a>
               <a class="btn btn-outline-primary d-block scroll-link" href="#production-template">Coba Gratis</a>
             </div>
           </div>

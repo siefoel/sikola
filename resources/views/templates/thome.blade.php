@@ -328,7 +328,7 @@
               </li>
               <li class="nav-item ms-2">
                 <a class="btn btn-primary fs-3 rounded btn-hover-shadow px-3 py-2"
-                  href="/auth">Login</a>
+                  href="auth">Login</a>
               </li>
             </ul>
           </div>
