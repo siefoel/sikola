@@ -36,7 +36,7 @@ class AuthController extends Controller
                 ];
             }
             if (Auth::attempt($data)) {
-                echo "sukses"; exit();
+                return redirect('/dashboard');
             }else{
                 return redirect('/auth')->with('faild','Username tidak ditemukan !!!');
             }

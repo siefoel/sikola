@@ -16,9 +16,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Favicon -->
     <link rel="shortcut icon" type="image/png" href="https://demos.adminmart.com/premium/bootstrap/modernize-bootstrap/package/dist/images/logos/favicon.ico" />
+    <link rel="stylesheet" href="{{asset('dist')}}/libs/jquery-raty-js/lib/jquery.raty.css">
     @yield('css')
+    
     <!-- Core Css -->
     <link  id="themeColors"  rel="stylesheet" href="{{asset('dist')}}/css/style.min.css" />
+    
   </head>
   <body>
     <!--  Body Wrapper -->
@@ -33,8 +36,9 @@
     <script src="{{asset('dist')}}/js/app.init.js"></script>
     <script src="{{asset('dist')}}/js/app-style-switcher.js"></script>
     <script src="{{asset('dist')}}/js/sidebarmenu.js"></script>
-    @yield('js')
     <script src="{{asset('dist')}}/js/custom.js"></script>
+    <script src="{{asset('dist')}}/js/plugins/toastr-init.js"></script>
+    @yield('js')
     
   </body>
 

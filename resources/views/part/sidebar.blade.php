@@ -29,7 +29,7 @@
             <span class="hide-menu">Administrator</span>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="/users" aria-expanded="false">
+            <a class="sidebar-link" href="/user" aria-expanded="false">
               <span>
                 <i class="ti ti-users"></i>
               </span>
@@ -37,12 +37,38 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="/role" aria-expanded="false">
-              <span>
-                <i class="ti ti-users"></i>
+            <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
+              <span class="d-flex">
+                <i class="ti ti-school"></i>
               </span>
               <span class="hide-menu">Role and Permission</span>
             </a>
+            <ul aria-expanded="false" class="collapse first-level">
+              <li class="sidebar-item">
+                <a href="/role" class="sidebar-link">
+                  <div class="round-16 d-flex align-items-center justify-content-center">
+                    <i class="ti ti-circle"></i>
+                  </div>
+                  <span class="hide-menu">Role</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="/role/menus" class="sidebar-link">
+                  <div class="round-16 d-flex align-items-center justify-content-center">
+                    <i class="ti ti-circle"></i>
+                  </div>
+                  <span class="hide-menu">Menus</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="/role/permission" class="sidebar-link">
+                  <div class="round-16 d-flex align-items-center justify-content-center">
+                    <i class="ti ti-circle"></i>
+                  </div>
+                  <span class="hide-menu">Permission</span>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="sidebar-item">
             <a class="sidebar-link has-arrow" href="#" aria-expanded="false">
@@ -53,7 +79,7 @@
             </a>
             <ul aria-expanded="false" class="collapse first-level">
               <li class="sidebar-item">
-                <a href="/datasekolah" class="sidebar-link">
+                <a href="/sekolah" class="sidebar-link">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
                   </div>
@@ -61,7 +87,7 @@
                 </a>
               </li>
               <li class="sidebar-item">
-                <a href="/verifysekolah" class="sidebar-link">
+                <a href="/sekolah/verify" class="sidebar-link">
                   <div class="round-16 d-flex align-items-center justify-content-center">
                     <i class="ti ti-circle"></i>
                   </div>

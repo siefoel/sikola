@@ -526,6 +526,7 @@
   <script src="{{asset('dist')}}/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="{{asset('dist')}}/libs/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="{{asset('dist')}}/js/custom-home.js"></script>
+
   @yield('js')
 
 </body>

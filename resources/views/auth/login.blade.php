@@ -21,11 +21,6 @@
             <div class="col-sm-8 col-md-6 col-xl-9">
               <h2 class="mb-3 fs-7 fw-bolder">Selamat datang di Admin SIKOLA</h2>
               <p class=" mb-9">Login untuk mrmulai mengadministrasikan pembelajaran anda !</p>
-              @if($message = Session::get('faild'))
-                    <div class="alert alert-danger">
-                    {{ $message }}
-                    </div>
-                @endif
               <form method="POST" class="needs-validation" action="auth/login" novalidate>
                 @csrf
                 <div class="mb-3">
@@ -67,6 +62,13 @@
 </div>
 @endsection
 @section('js')
+@if($message = Session::get('faild'))
+<script>
+      toastr.warning( "{{ $message }}", "Peringatan", {
+        progressBar: true,
+      });
+</script>
+@endif
 <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
   (function () {
